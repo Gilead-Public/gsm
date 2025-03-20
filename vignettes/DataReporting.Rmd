@@ -111,7 +111,7 @@ The following sub-steps will dive into the creation and structure of each of the
 
 #### Step 1.1 - Transform CTMS data into `dfGroups` data frame
 
-The `dfGroups` data frame is critical to providing site-, study- and country-level information in the final report. This table is based on CTMS data and the mapped `dfEnrolled` data frame created in the Analysis workflow. Creating this table requires the creation of 5 smaller tables that summarize the data at each group level using `RunQuery()` and `MakeLongMeta()`. These small tables are then bound together to create `dfGroups`.
+The `dfGroups` data frame is critical to providing site-, study- and country-level information in the final report. This table is based on CTMS data and the mapped `Mapped_SUBJ` data frame created in the Mapping workflow. Creating this table requires the creation of 5 smaller tables that summarize the data at each group level using `RunQuery()` and `MakeLongMeta()`. These small tables are then bound together to create `dfGroups`.
 
 ```{r include = TRUE, message = FALSE}
 #Transform CTMS Site and Study Level data
@@ -124,15 +124,15 @@ dfCTMSStudy <- RunQuery(df = clindata::ctms_study,
   MakeLongMeta(strGroupLevel = 'Study')
 
 # Get Participant and Site counts for Country, Site and Study
-dfSiteCounts <- RunQuery(df = mapped$Mapped_ENROLL,
+dfSiteCounts <- RunQuery(df = mapped$Mapped_SUBJ,
                              strQuery = "SELECT invid as GroupID, COUNT(DISTINCT subjectid) as ParticipantCount, COUNT(DISTINCT invid) as SiteCount FROM df GROUP BY invid") |>
   MakeLongMeta(strGroupLevel = "Site")
 
-dfStudyCounts <- RunQuery(df = mapped$Mapped_ENROLL,
+dfStudyCounts <- RunQuery(df = mapped$Mapped_SUBJ,
                              strQuery = "SELECT studyid as GroupID, COUNT(DISTINCT subjectid) as ParticipantCount, COUNT(DISTINCT invid) as SiteCount FROM df GROUP BY studyid") |>
   MakeLongMeta(strGroupLevel = "Study")
 
-dfCountryCounts <- RunQuery(df = mapped$Mapped_ENROLL,
+dfCountryCounts <- RunQuery(df = mapped$Mapped_SUBJ,
                              strQuery = "SELECT country as GroupID, COUNT(DISTINCT subjectid) as ParticipantCount, COUNT(DISTINCT invid) as SiteCount FROM df GROUP BY country") |>
   MakeLongMeta(strGroupLevel = "Country")
 
