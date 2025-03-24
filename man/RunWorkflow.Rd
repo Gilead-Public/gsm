@@ -43,14 +43,16 @@ Calls \code{RunStep} for each item in \code{lWorkflow$workflow} and saves the re
 # ----
 # Workflow using in-memory data.
 
-Generate mapped input data to metric workflow.
+lRawData <- list(
+  Raw_AE = clindata::rawplus_ae,
+  Raw_SUBJ = clindata::rawplus_dm
+)
+
+# Generate mapped input data to metric workflow.
 lMappingWorkflows <- MakeWorkflowList(
   c("AE", "SUBJ"),
-  strPath = here::here("tests/testthat/testdata/mappings"),
   bExact = TRUE
 )
-mappings_spec <- CombineSpecs(lMappingWorkflows)
-lRawData <- Ingest(gsm::lSource, mappings_spec)
 
 lMappedData <- RunWorkflows(
   lMappingWorkflows,
@@ -58,7 +60,7 @@ lMappedData <- RunWorkflows(
 )
 
 # Run the metric workflow.
-lMetricWorkflow <- MakeWorkflowList(here::here("tests/testthat/testdata/metrics/kri0001"))$kri0001
+lMetricWorkflow <- MakeWorkflowList("kri0001")$kri0001
 lMetricOutput <- RunWorkflow(
   lMetricWorkflow,
   lMappedData
@@ -106,10 +108,10 @@ lConfig <- list(
   SaveData = SaveData,
   Domains = c(
     Raw_AE = function() {
-       gsm::lSource$Raw_AE
+      clindata::rawplus_ae
     },
     Raw_SUBJ = function() {
-       gsm::lSource$Raw_SUBJ
+      clindata::rawplus_dm
     },
     Mapped_AE = file.path(tempdir(), "mapped-ae.csv"),
     Mapped_SUBJ = file.path(tempdir(), "mapped-subj.csv")
@@ -119,7 +121,6 @@ lConfig <- list(
 # Generate mapped input data to metric workflow.
 lMappingWorkflows <- MakeWorkflowList(
   c("AE", "SUBJ"),
-  strPath = here::here("tests/testthat/testdata/mappings"),
   bExact = TRUE
 )
 
@@ -129,7 +130,7 @@ lMappedData <- RunWorkflows(
 )
 
 # Run the metric workflow.
-lMetricWorkflow <- MakeWorkflowList(here::here("tests/testthat/testdata/metrics/kri0001"))$kri0001
+lMetricWorkflow <- MakeWorkflowList("kri0001")$kri0001
 lMetricOutput <- RunWorkflow(
   lMetricWorkflow,
   lConfig = lConfig

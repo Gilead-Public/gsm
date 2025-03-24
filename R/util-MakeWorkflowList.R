@@ -12,8 +12,11 @@
 #' @param bRecursive `logical` Find files in nested folders? Default TRUE
 #'
 #' @examples
+#' # use default
+#' workflow <- MakeWorkflowList()
+#'
 #' # get specific workflow files
-#' workflow <- MakeWorkflowList(strPath = here::here("tests/testthat/testdata/metrics"))
+#' workflow <- MakeWorkflowList(strNames = c("kri0001", "kri0005", "cou0003"))
 #'
 #' @return `list` A list of workflows with workflow and parameter metadata.
 #'
@@ -22,7 +25,7 @@
 MakeWorkflowList <- function(
   strNames = NULL,
   strPath = "workflow",
-  strPackage = NULL,
+  strPackage = "gsm",
   bExact = FALSE,
   bRecursive = TRUE
 ) {

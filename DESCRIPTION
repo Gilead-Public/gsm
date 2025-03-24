@@ -55,6 +55,7 @@ Imports:
     utils,
     yaml
 Suggests:
+    clindata,
     covr,
     DT,
     duckdb,
@@ -77,6 +78,8 @@ Suggests:
     withr
 VignetteBuilder: 
     knitr
+Remotes:
+    clindata=Gilead-BioStats/clindata
 Config/testthat/edition: 3
 Config/testthat/parallel: true
 Config/testthat/start-first: util-RunWorkflow, util-clindata
