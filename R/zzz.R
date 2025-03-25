@@ -14,11 +14,10 @@ globalVariables(c("."))
 # format startup message
 gsmStartupMessage <- function()
 {
-  load_msg <- cli::col_white(paste0("This is  version ",
-    packageVersion("gsm"), " of the gsm package."))
-  warning_header <- cli::col_white(cli::rule(
+  load_msg <- paste0("This is  version ",
+    packageVersion("gsm"), " of the gsm package.")
+  warning_header <- cli::rule(
     left = cli::style_bold("{gsm} Package Deprecation")
-    )
   )
   warning_msg <- paste0(
     cli::col_red(cli::symbol$info),
