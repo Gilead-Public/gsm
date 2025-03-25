@@ -27,7 +27,7 @@ gsmStartupMessage <- function()
                            cli::format_inline("{.href [gsm.core](https://gilead-biostats.github.io/gsm.core/)}"),
                            " package website for full details.",
                            "\n", cli::col_red(cli::symbol$info),
-                           " This package will no longer be updated as of March 2025, so migrating to the new package structure is highly recommended."))
+                           " This package will no longer receive updates after March 2025. To ensure continued support and access to the latest features, we strongly recommend migrating to the new package structure."))
   )
   msg <- paste0(
     load_msg, "\n",
