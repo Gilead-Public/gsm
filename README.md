@@ -6,6 +6,21 @@
 
 # Good Statistical Monitoring {gsm} R package
 
+<span style="color: red; font-weight: bold">NOTICE: </span>
+<span style="color: red">As of March 2025, the {gsm} package is no longer being maintained. It has been replaced by a series of modularized packages.</span>
+
+<span style="color: red">The contents of `{gsm}` have been split out among 4 packages as follows:</span>
+
+<span style="color: red">[**`{gsm.core}`**](https://github.com/Gilead-BioStats/gsm.core): A package containing the analytics functionality and utility functions to run workflows.</span>
+
+<span style="color: red">[**`{gsm.mapping}`**](https://github.com/Gilead-BioStats/gsm.mapping): A package that provides workflows to apply the necessary data transformation from raw/source datasets to appropriate domains.</span>
+
+<span style="color: red">[**`{gsm.kri}`**](https://github.com/Gilead-BioStats/gsm.kri): A package that provides workflows
+    to generate metrics and functionality to visualize and report on these metrics.</span>
+
+<span style="color: red">[**`{gsm.reporting}`**](https://github.com/Gilead-BioStats/gsm.reporting): A package that provides workflows
+    to generate the reporting data model needed to generate reports.</span>
+
 The {gsm} package provides a standardized Risk Based Quality Monitoring (RBQM) framework for clinical trials that pairs a flexible data pipeline with robust reports like the one shown below.  
 
 <center> 
