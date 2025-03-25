@@ -21,13 +21,13 @@ gsmStartupMessage <- function()
     )
   )
   warning_msg <- paste0(
-    cli::col_red(cli::symbol$cross),
+    cli::col_red(cli::symbol$info),
     cli::col_br_red(paste0(" As of March 2025, {gsm} has been replaced by a series of modularized packages.",
-                           "\n", cli::col_red(cli::symbol$cross),
+                           "\n", cli::col_red(cli::symbol$info),
                            " See the ",
                            cli::format_inline("{.href [gsm.core](https://gilead-biostats.github.io/gsm.core/)}"),
                            " package website for full details.",
-                           "\n", cli::col_red(cli::symbol$cross),
+                           "\n", cli::col_red(cli::symbol$info),
                            " This package will no longer be updated as of March 2025, so migrating to the new package structure is highly recommended."))
   )
   msg <- paste0(
