@@ -1,3 +1,9 @@
+# gsm v2.2.4
+
+This patch release will be the final release of the gsm package. This release adds deprecation language upon load as well as to the top of the README. 
+
+The `{gsm.core}` package is the successor package to be used. More information can be found on the [package website](https://gilead-biostats.github.io/gsm.core)
+
 # gsm v2.2.3
 
 This patch release updates several user interface and widget features. Specifically:
