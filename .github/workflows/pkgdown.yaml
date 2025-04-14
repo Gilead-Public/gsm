@@ -3,7 +3,7 @@ on:
     branches: [main]
   workflow_dispatch:
 
-name: pkgdown-main
+name: pkgdown-release
 
 jobs:
   pkgdown-main:
@@ -32,7 +32,8 @@ jobs:
       - name: Generate sample reports
         shell: Rscript {0}
         run: |
-          devtools::load_all()
+          install.packages("devtools")
+          devtools::install(dependencies = T)
           dir.create(here::here("pkgdown", "assets"), recursive = TRUE)
 
           lCharts <- MakeCharts(
