@@ -34,6 +34,7 @@ jobs:
         run: |
           install.packages("devtools")
           devtools::install(dependencies = T)
+          library(gsm)
           dir.create(here::here("pkgdown", "assets"), recursive = TRUE)
 
           lCharts <- MakeCharts(
