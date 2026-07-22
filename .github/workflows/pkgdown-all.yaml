@@ -1,0 +1,42 @@
+# name: pkgdown-all.yaml
+# version: 0.4.1
+# Description: Triggers the core pkgdown deployment and cleanup workflows.
+name: pkgdown-all
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Mode to run: deploy or cleanup"
+        required: true
+        default: 'deploy'
+        type: choice
+        options:
+          - deploy
+          - cleanup
+      pr-number:
+        description: "Pull request number. Leave blank to deploy to a branch."
+        type: string
+      pkgdown-dev-mode:
+        description: "Whether pkgdown should operate in dev mode."
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  call-pkgdown-core:
+    uses: Gilead-BioStats/gsm.utils/.github/workflows/pkgdown-core.yaml@actions-v1
+    with:
+      # These inputs only actually matter for workflow_dispatch; otherwise
+      # they're automatically determined.
+      mode: ${{ inputs.mode }}
+      pr-number: ${{ inputs.pr-number }}
+      pkgdown-dev-mode: ${{ inputs.pkgdown-dev-mode == true }}
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      app-id: ${{ secrets.CM_BOT_APP_ID }}
+      app-private-key: ${{ secrets.CM_BOT_PRIVATE_KEY }}
