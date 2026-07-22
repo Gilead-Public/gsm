@@ -25,7 +25,7 @@ Denominator, Metric, Score, and PredictedCount.
 Fits a Poisson model to site-level data and adds columns capturing
 Residual and Predicted Count for each site.
 
-More information can be found in \href{https://gilead-biostats.github.io/gsm/articles/KRI\%20Method.html#the-poisson-regression-method}{The Poisson Regression Method}
+More information can be found in \href{https://gilead-public.github.io/gsm/articles/KRI\%20Method.html#the-poisson-regression-method}{The Poisson Regression Method}
 of the KRI Method vignette.
 }
 \section{Statistical Methods}{
