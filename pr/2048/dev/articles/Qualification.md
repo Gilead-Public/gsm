@@ -229,8 +229,8 @@ quantifies the extent of unit testing. The closer this measure is to
 | R/Widget_GroupOverview.R               | 84.44 %       |
 | R/Widget_ScatterPlot.R                 | 80.00 %       |
 | R/Widget_TimeSeries.R                  | 80.43 %       |
-| R/zzz.R                                | 92.86 %       |
-| Total Coverage                         | 88.69 %       |
+| R/zzz.R                                | 93.75 %       |
+| Total Coverage                         | 88.71 %       |
 
 ## Qualification Testing Environment
 
@@ -248,7 +248,7 @@ quantifies the extent of unit testing. The closer this measure is to
 **attached base packages:** *tcltk*, *stats*, *graphics*, *grDevices*,
 *utils*, *datasets*, *methods* and *base*
 
-**other attached packages:** *gsm(v.2.2.3)*, *testthat(v.3.3.2)*,
+**other attached packages:** *gsm(v.2.2.4)*, *testthat(v.3.3.2)*,
 *riskmetric(v.0.2.7)*, *stringr(v.1.6.0)*, *gh(v.1.6.1)*,
 *pander(v.0.6.6)*, *purrr(v.1.2.2)*, *dplyr(v.1.2.1)*, *knitr(v.1.51)*
 and *gt(v.1.3.0)*
@@ -1292,13 +1292,3 @@ Merging ingest into dev
 | Requester |   Date Requested    | Reviewers | Review Status |
 |:---------:|:-------------------:|:---------:|:-------------:|
 | jwildfire | 2024-09-13 09:16:58 | samussiah |   COMMENTED   |
-
-#### Pull Request 1839: skip `Analysis_` checks in checkSpec
-
-Merging fix-1837 into dev
-
-<https://github.com/Gilead-Public/gsm/pull/1839>
-
-|  Requester   |   Date Requested    | Reviewers | Review Status |
-|:------------:|:-------------------:|:---------:|:-------------:|
-| lauramaxwell | 2024-09-12 21:56:47 |           |               |

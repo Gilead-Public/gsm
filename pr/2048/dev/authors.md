@@ -47,12 +47,12 @@ Source:
 Wu G, Wildfire J, Roumaya M, Childress S, Maxwell L, Anderson J, Harmon
 J, Zhu Z, Kosiba N, Sanders D, Ge L, Wang Z, McLaughlin C, Dickens C,
 Gans M, Zheng A, Pastoor D (2026). *gsm: Good Statistical Monitoring*. R
-package version 2.2.3, <https://github.com/Gilead-BioStats/gsm>.
+package version 2.2.4, <https://github.com/Gilead-BioStats/gsm>.
 
     @Manual{,
       title = {gsm: Good Statistical Monitoring},
       author = {George Wu and Jeremy Wildfire and Matt Roumaya and Spencer Childress and Laura Maxwell and Jacob Anderson and Jon Harmon and Zelos Zhu and Nathan Kosiba and Douglas Sanders and Li Ge and Zhongkai Wang and Colleen McLaughlin and Chelsea Dickens and Maya Gans and Anne Zheng and Devin Pastoor},
       year = {2026},
-      note = {R package version 2.2.3},
+      note = {R package version 2.2.4},
       url = {https://github.com/Gilead-BioStats/gsm},
     }
