@@ -56,7 +56,7 @@ lRawData <- Ingest(lSourceData, lIngestWorkflow$spec)
 #> ℹ Ingesting data for AE.
 #> Creating a new temporary DuckDB connection.
 #> duckdb is keeping downloaded extensions in a temporary directory:
-#> ℹ /tmp/RtmpRVkhw2/duckdb/extensions
+#> ℹ /tmp/RtmpDL3vD7/duckdb/extensions
 #> This is removed when the R session ends, so extensions are re-downloaded each session.
 #> ℹ To keep them, point `options(duckdb.extension_directory =)` or the `DUCKDB_EXTENSION_DIRECTORY` environment variable at a permanent path.
 #> ✔ SQL Query complete: 4854 rows returned.

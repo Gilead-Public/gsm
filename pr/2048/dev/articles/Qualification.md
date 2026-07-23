@@ -305,13 +305,23 @@ to 1 (high risk).
 | purrr       | 1.2.2      | 0.391     |
 | rlang       | 1.3.0      | 0.384     |
 | stats       | 4.6.1      | 0.704     |
-| stringr     | 1.6.0      | 0.363     |
-| tibble      | 3.3.1      | 0.350     |
+| stringr     | 1.6.0      | 0.365     |
+| tibble      | 3.3.1      | 0.348     |
 | tidyr       | 1.3.2      | 0.357     |
 | utils       | 4.6.1      | 0.687     |
 | yaml        | 2.3.12     | 0.273     |
 
 ## Pull Request History
+
+#### Pull Request 2049: Catch up Dev to Main
+
+Merging main into dev
+
+<https://github.com/Gilead-Public/gsm/pull/2049>
+
+|  Requester  |   Date Requested    | Reviewers | Review Status |
+|:-----------:|:-------------------:|:---------:|:-------------:|
+| nandriychuk | 2026-07-23 01:55:12 |           |   APPROVED    |
 
 #### Pull Request 2046: gsm v2.2.4 release candidate
 
