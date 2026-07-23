@@ -6,7 +6,7 @@
 #' method with normal approximation.
 #'
 #' More information can be found in [The Normal Approximation
-#' Method](https://gilead-biostats.github.io/gsm/articles/KRI%20Method.html#the-normal-approximation-method)
+#' Method](https://gilead-public.github.io/gsm/articles/KRI%20Method.html#the-normal-approximation-method)
 #' of the KRI Method vignette.
 #'
 #' @section Statistical Methods: This function applies funnel plots using

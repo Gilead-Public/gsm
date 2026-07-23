@@ -1,0 +1,26 @@
+# name: r-releaser-caller.yaml
+# version: 0.4.1
+# Description: R package release workflow
+name: Release
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag to release
+        required: true
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  call-release-workflow:
+    uses: Gilead-BioStats/gsm.utils/.github/workflows/r-releaser.yaml@actions-v1
+    with:
+      tag: ${{ github.event.release.tag_name || inputs.tag }}
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      app-id: ${{ secrets.CM_BOT_APP_ID }}
+      app-private-key: ${{ secrets.CM_BOT_PRIVATE_KEY }}

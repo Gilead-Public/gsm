@@ -20,7 +20,6 @@
     Code
       LogMessage(level = "info", message = "cli style info", cli_detail = "h3")
     Message
-      
       -- cli style info 
 
 ---

@@ -1,3 +1,9 @@
+# gsm v2.2.4
+
+This patch release will be the final release of the gsm package. This release adds deprecation language upon load as well as to the top of the README. 
+
+The `{gsm.core}` package is the successor package to be used. More information can be found on the [package website](https://gilead-biostats.github.io/gsm.core)
+
 # gsm v2.2.3
 
 This patch release updates several user interface and widget features. Specifically:
@@ -102,7 +108,7 @@ As part of the v2 refactor, we have simplified and standardized the {gsm} data m
 - **Mapping has been refactored** - `Input_Rate()` provides a generalized approach to mapping from raw data to `dfInput`, the standardized participant-level data set used to generate each KRI. This has several benefits:
   - Better drill-down with `dfNumerator` 
   - Standard columns in `dfInput` across all domains
-  - **Fully standardized Analysis data model** - With the update to the mapping process, the analysis data model for generating metrics is now fully standardized as shown in the [Data Model Vignette](https://gilead-biostats.github.io/gsm/articles/DataModel.html). Note that extra columns are permitted in `dfAnalyzed`, but not in other domains.
+  - **Fully standardized Analysis data model** - With the update to the mapping process, the analysis data model for generating metrics is now fully standardized as shown in the [Data Model Vignette](https://gilead-public.github.io/gsm/articles/DataModel.html). Note that extra columns are permitted in `dfAnalyzed`, but not in other domains.
 
 ### Reporting Changes
 

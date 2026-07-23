@@ -113,7 +113,7 @@ Bundled/minified JavaScript charting library that is used as part of the `htmlwi
 
 #### Description
 
-R Markdown files that are used as templates underlying the [`gsm::Study_Report()`](https://gilead-biostats.github.io/gsm/reference/Study_Report.html) function. Also includes a `.css` file for HTML styling.
+R Markdown files that are used as templates underlying the [`gsm::Study_Report()`](https://gilead-public.github.io/gsm/reference/Study_Report.html) function. Also includes a `.css` file for HTML styling.
 
 #### Contents
 

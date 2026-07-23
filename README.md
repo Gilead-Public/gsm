@@ -29,7 +29,7 @@ The {gsm} package provides a standardized Risk Based Quality Monitoring (RBQM) f
 
 </center>
 
-This README provides a high-level overview of {gsm}; see the [package website](https://gilead-biostats.github.io/gsm/) for additional details.
+This README provides a high-level overview of {gsm}; see the [package website](https://gilead-public.github.io/gsm/) for additional details.
 
 
 # Background 
@@ -69,7 +69,7 @@ All {gsm} assessments use a standardized 6 step data pipeline:
 5.  **Flag** - Uses `analyzed` data and numeric `thresholds` to create `flagged` data.
 6.  **Summarize** - Selects key columns from `flagged` data to create `summary` data.
 
-To learn more about {gsm}'s data pipeline, visit the [Data Pipeline Vignette](https://gilead-biostats.github.io/gsm/articles/DataModel.html).
+To learn more about {gsm}'s data pipeline, visit the [Data Pipeline Vignette](https://gilead-public.github.io/gsm/articles/DataModel.html).
 
 # Reporting
 
@@ -83,8 +83,8 @@ Detailed RMarkdown/HTML reporting is built into `{gsm}`, and provides a detailed
 
 Full reports for a sample trial run with [`{clindata}`](https://github.com/Gilead-BioStats/clindata) are provided below:
 
-- [Site Report](https://gilead-biostats.github.io/gsm/report_kri_site.html)
-- [Country Report](https://gilead-biostats.github.io/gsm/report_kri_country.html)
+- [Site Report](https://gilead-public.github.io/gsm/report_kri_site.html)
+- [Country Report](https://gilead-public.github.io/gsm/report_kri_country.html)
 
 
 
@@ -106,4 +106,4 @@ Since {gsm} is designed for use in a [GCP](https://en.wikipedia.org/wiki/Good_cl
 - **Regression Testing** - Extensive QC and testing is done before each release. 
 - **Code Formatting** - Code is formatted with {styler} before each release. 
  
-Additional detail, including links to functional documentation and vignettes, is available in the [package website](https://gilead-biostats.github.io/gsm/).
+Additional detail, including links to functional documentation and vignettes, is available in the [package website](https://gilead-public.github.io/gsm/).
