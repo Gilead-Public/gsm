@@ -1,5 +1,23 @@
 # Changelog
 
+## gsm v2.2.5
+
+This patch release addresses post-transfer housekeeping following the
+repository move from `Gilead-BioStats/gsm` to `Gilead-Public/gsm`.
+Specifically:
+
+- Updated all references to the package website from
+  `https://gilead-biostats.github.io/gsm` to
+  `https://gilead-public.github.io/gsm` across source files, vignettes,
+  documentation, and configuration
+- Fixed CI by sourcing the `log4r` dependency from `r-lib/log4r` on
+  GitHub, as the package was archived from CRAN
+- Updated GitHub Actions workflows via
+  [`gsm.utils::update_gsm_package()`](https://gilead-biostats.github.io/gsm.utils/reference/update_gsm_package.html),
+  replacing deprecated per-branch workflows (`R-CMD-check-dev`,
+  `R-CMD-check-main`, `pkgdown-dev`, `pkgdown-main`, `pkgdown-pr`) with
+  unified `R-CMD-check` and `pkgdown-all` workflows
+
 ## gsm v2.2.4
 
 This patch release will be the final release of the gsm package. This

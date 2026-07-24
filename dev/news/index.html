@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">gsm</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.2.4</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.2.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,13 @@
       <small>Source: <a href="https://github.com/Gilead-BioStats/gsm/blob/dev/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="2.2.5" id="gsm-v225">gsm v2.2.5<a class="anchor" aria-label="anchor" href="#gsm-v225"></a></h2>
+<p>This patch release addresses post-transfer housekeeping following the repository move from <code>Gilead-BioStats/gsm</code> to <code>Gilead-Public/gsm</code>. Specifically:</p>
+<ul><li>Updated all references to the package website from <code>https://gilead-biostats.github.io/gsm</code> to <code>https://gilead-public.github.io/gsm</code> across source files, vignettes, documentation, and configuration</li>
+<li>Fixed CI by sourcing the <code>log4r</code> dependency from <code>r-lib/log4r</code> on GitHub, as the package was archived from CRAN</li>
+<li>Updated GitHub Actions workflows via <code><a href="https://gilead-biostats.github.io/gsm.utils/reference/update_gsm_package.html" class="external-link">gsm.utils::update_gsm_package()</a></code>, replacing deprecated per-branch workflows (<code>R-CMD-check-dev</code>, <code>R-CMD-check-main</code>, <code>pkgdown-dev</code>, <code>pkgdown-main</code>, <code>pkgdown-pr</code>) with unified <code>R-CMD-check</code> and <code>pkgdown-all</code> workflows</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.2.4" id="gsm-v224">gsm v2.2.4<a class="anchor" aria-label="anchor" href="#gsm-v224"></a></h2>
 <p>This patch release will be the final release of the gsm package. This release adds deprecation language upon load as well as to the top of the README.</p>

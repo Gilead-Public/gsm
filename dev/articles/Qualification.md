@@ -248,7 +248,7 @@ quantifies the extent of unit testing. The closer this measure is to
 **attached base packages:** *tcltk*, *stats*, *graphics*, *grDevices*,
 *utils*, *datasets*, *methods* and *base*
 
-**other attached packages:** *gsm(v.2.2.4)*, *testthat(v.3.3.2)*,
+**other attached packages:** *gsm(v.2.2.5)*, *testthat(v.3.3.2)*,
 *riskmetric(v.0.2.7)*, *stringr(v.1.6.0)*, *gh(v.1.6.1)*,
 *pander(v.0.6.6)*, *purrr(v.1.2.2)*, *dplyr(v.1.2.1)*, *knitr(v.1.51)*
 and *gt(v.1.3.0)*
@@ -295,21 +295,21 @@ to 1 (high risk).
 | dplyr       | 1.2.1      | 0.383     |
 | ggplot2     | 4.0.3      | 0.410     |
 | glue        | 1.8.1      | 0.278     |
-| gt          | 1.3.0      | 0.473     |
-| htmltools   | 0.5.9      | 0.443     |
-| htmlwidgets | 1.6.4      | 0.354     |
-| jsonlite    | 2.0.0      | 0.397     |
-| lifecycle   | 1.0.5      | 0.329     |
-| log4r       | 0.4.4.9000 | 0.462     |
-| magrittr    | 2.0.5      | 0.330     |
-| purrr       | 1.2.2      | 0.405     |
-| rlang       | 1.3.0      | 0.435     |
+| gt          | 1.3.0      | 0.456     |
+| htmltools   | 0.5.9      | 0.404     |
+| htmlwidgets | 1.6.4      | 0.317     |
+| jsonlite    | 2.0.0      | 0.362     |
+| lifecycle   | 1.0.5      | 0.287     |
+| log4r       | 0.4.4.9000 | 0.434     |
+| magrittr    | 2.0.5      | 0.291     |
+| purrr       | 1.2.2      | 0.391     |
+| rlang       | 1.3.0      | 0.384     |
 | stats       | 4.6.1      | 0.704     |
-| stringr     | 1.6.0      | 0.395     |
-| tibble      | 3.3.1      | 0.393     |
-| tidyr       | 1.3.2      | 0.402     |
+| stringr     | 1.6.0      | 0.365     |
+| tibble      | 3.3.1      | 0.348     |
+| tidyr       | 1.3.2      | 0.357     |
 | utils       | 4.6.1      | 0.687     |
-| yaml        | 2.3.12     | 0.311     |
+| yaml        | 2.3.12     | 0.273     |
 
 ## Pull Request History
 
@@ -1302,13 +1302,3 @@ Merging fix-1835 into dev
 | Requester  |   Date Requested    | Reviewers | Review Status |
 |:----------:|:-------------------:|:---------:|:-------------:|
 | jonthegeek | 2024-09-13 16:11:28 |           |   COMMENTED   |
-
-#### Pull Request 1841: Refactor Data Ingestion Workflow
-
-Merging ingest into dev
-
-<https://github.com/Gilead-Public/gsm/pull/1841>
-
-| Requester |   Date Requested    | Reviewers | Review Status |
-|:---------:|:-------------------:|:---------:|:-------------:|
-| jwildfire | 2024-09-13 09:16:58 | samussiah |   COMMENTED   |
