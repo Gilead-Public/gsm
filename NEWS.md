@@ -1,3 +1,18 @@
+> **NOTICE:** As of March 2025, the `{gsm}` package is no longer being maintained. It has been replaced by a series of modularized packages. The contents of [gsm](https://github.com/Gilead-BioStats/gsm) have been split out among 4 packages as follows:
+>
+> - [**`{gsm.core}`**](https://github.com/Gilead-BioStats/gsm.core): A package containing the analytics functionality and utility functions to run workflows.
+> - [**`{gsm.mapping}`**](https://github.com/Gilead-BioStats/gsm.mapping): A package that provides workflows to apply the necessary data transformation from raw/source datasets to appropriate domains.
+> - [**`{gsm.kri}`**](https://github.com/Gilead-BioStats/gsm.kri): A package that provides workflows to generate metrics and functionality to visualize and report on these metrics.
+> - [**`{gsm.reporting}`**](https://github.com/Gilead-BioStats/gsm.reporting): A package that provides workflows to generate the reporting data model needed to generate reports.
+
+# gsm v2.2.5
+
+This patch release addresses post-transfer housekeeping following the repository move from `Gilead-BioStats/gsm` to `Gilead-Public/gsm`. Specifically:
+
+- Updated all references to the package website from `https://gilead-biostats.github.io/gsm` to `https://gilead-public.github.io/gsm` across source files, vignettes, documentation, and configuration
+- Fixed CI by sourcing the `log4r` dependency from `r-lib/log4r` on GitHub, as the package was archived from CRAN
+- Updated GitHub Actions workflows via `gsm.utils::update_gsm_package()`, replacing deprecated per-branch workflows (`R-CMD-check-dev`, `R-CMD-check-main`, `pkgdown-dev`, `pkgdown-main`, `pkgdown-pr`) with unified `R-CMD-check` and `pkgdown-all` workflows
+
 # gsm v2.2.4
 
 This patch release will be the final release of the gsm package. This release adds deprecation language upon load as well as to the top of the README. 
