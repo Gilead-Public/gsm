@@ -27,7 +27,7 @@ Estimate, and Score.
 
 Analyzes count data using the Fisher's exact test.
 
-More information can be found in \href{https://gilead-biostats.github.io/gsm/articles/KRI\%20Method.html#the-fishers-exact-method}{The Fisher's Exact Method Section}
+More information can be found in \href{https://gilead-public.github.io/gsm/articles/KRI\%20Method.html#the-fishers-exact-method}{The Fisher's Exact Method Section}
 of the KRI Method vignette.
 }
 \section{Statistical Methods}{

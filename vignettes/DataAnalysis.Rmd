@@ -240,7 +240,7 @@ The following sections include various examples of supporting functions and stat
 
 ### What Statistical Models Are Available For Each Assessment?
 
--   By default, all yaml workflow assessments specified in the `inst/workflows/` directory use the [normal approximation](https://gilead-biostats.github.io/gsm/articles/KRI%20Method.html#the-normal-approximation-method) method.
--   Optionally, other statistical methods include: [**Poisson**](https://gilead-biostats.github.io/gsm/articles/KRI%20Method.html#the-poisson-regression-method), [**Fisher's Exact**](https://gilead-biostats.github.io/gsm/articles/KRI%20Method.html#the-fishers-exact-method), and [**Identity**](https://gilead-biostats.github.io/gsm/articles/KRI%20Method.html#the-identity-method).
+-   By default, all yaml workflow assessments specified in the `inst/workflows/` directory use the [normal approximation](https://gilead-public.github.io/gsm/articles/KRI%20Method.html#the-normal-approximation-method) method.
+-   Optionally, other statistical methods include: [**Poisson**](https://gilead-public.github.io/gsm/articles/KRI%20Method.html#the-poisson-regression-method), [**Fisher's Exact**](https://gilead-public.github.io/gsm/articles/KRI%20Method.html#the-fishers-exact-method), and [**Identity**](https://gilead-public.github.io/gsm/articles/KRI%20Method.html#the-identity-method).
 
 ![](data_analysis_combined.png){width="100%"}

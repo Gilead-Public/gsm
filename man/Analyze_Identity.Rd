@@ -26,7 +26,7 @@ Metric, and Score.
 Used in the data pipeline between \code{Transform} and \code{Flag} to rename KRI and
 Score columns.
 
-More information can be found in \href{https://gilead-biostats.github.io/gsm/articles/KRI\%20Method.html#the-identity-method}{The Identity Method}
+More information can be found in \href{https://gilead-public.github.io/gsm/articles/KRI\%20Method.html#the-identity-method}{The Identity Method}
 of the KRI Method vignette.
 }
 \examples{

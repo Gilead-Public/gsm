@@ -30,7 +30,7 @@ Denominator, Metric, OverallMetric, Factor, and Score.
 Creates analysis results data for percentage/rate data using funnel plot
 method with normal approximation.
 
-More information can be found in \href{https://gilead-biostats.github.io/gsm/articles/KRI\%20Method.html#the-normal-approximation-method}{The Normal Approximation Method}
+More information can be found in \href{https://gilead-public.github.io/gsm/articles/KRI\%20Method.html#the-normal-approximation-method}{The Normal Approximation Method}
 of the KRI Method vignette.
 }
 \section{Statistical Methods}{

@@ -49,7 +49,7 @@ The `meta` section of a workflow YAML provides key metadata describing the modul
 - `Details`: *optional* A more detailed description of the module specified in the workflow.
 - `Repo`: Package repo and version. Should be compatible with the `repo` parameter in `remotes::install_github()`. 
 - `Status`: The validation status of the reporting output. Valid values: 
-    - `Qualified`: Output has been qualified via our qualification process specified [here](https://gilead-biostats.github.io/gsm/articles/QualificationWorkflow.html). 
+    - `Qualified`: Output has been qualified via our qualification process specified [here](https://gilead-public.github.io/gsm/articles/QualificationWorkflow.html). 
     - `Pilot`: Output is being used by pilot studies and is maintained in a package repository.
     - `Prototype`: Output is created using custom scripts on an ad-hoc basis.
     
@@ -348,7 +348,7 @@ meta:
   Status: Qualified
   Permission: Users
   Outputs: An html report
-  ExampleURL: https://gilead-biostats.github.io/gsm/report_kri_site.html
+  ExampleURL: https://gilead-public.github.io/gsm/report_kri_site.html
 spec:
   Reporting_Results:
     _all:

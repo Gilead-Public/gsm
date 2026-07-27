@@ -6,7 +6,7 @@
 #'   Score columns.
 #'
 #'   More information can be found in [The Identity
-#'   Method](https://gilead-biostats.github.io/gsm/articles/KRI%20Method.html#the-identity-method)
+#'   Method](https://gilead-public.github.io/gsm/articles/KRI%20Method.html#the-identity-method)
 #'   of the KRI Method vignette.
 #'
 #' @param dfTransformed `data.frame` Transformed data for analysis. Data should
