@@ -265,7 +265,7 @@ and *gt(v.1.3.0)*
 *pillar(v.1.11.1)*, *pkgdown(v.2.2.1)*, *jquerylib(v.0.1.4)*,
 *tidyr(v.1.3.2)*, *ellipsis(v.0.3.3)*, *cranlogs(v.2.1.1)*,
 *cachem(v.1.1.0)*, *sessioninfo(v.1.2.4)*, *tidyselect(v.1.2.1)*,
-*digest(v.0.6.39)*, *stringi(v.1.8.7)*, *duckdb(v.1.5.4.3)*,
+*digest(v.0.6.39)*, *stringi(v.1.8.7)*, *duckdb(v.1.5.5)*,
 *rprojroot(v.2.1.1)*, *fastmap(v.1.2.0)*, *grid(v.4.6.1)*,
 *here(v.1.0.2)*, *cli(v.3.6.6)*, *magrittr(v.2.0.5)*,
 *triebeard(v.0.4.1)*, *pkgbuild(v.1.4.8)*, *broom(v.1.0.13)*,
@@ -288,30 +288,50 @@ to 1 (high risk).
 
 | package     | version    | pkg_score |
 |-------------|------------|-----------|
-| broom       | 1.0.13     | 0.321     |
-| cli         | 3.6.6      | 0.398     |
-| DBI         | 1.3.0      | 0.345     |
-| dbplyr      | 2.6.0      | 0.371     |
-| dplyr       | 1.2.1      | 0.383     |
-| ggplot2     | 4.0.3      | 0.410     |
-| glue        | 1.8.1      | 0.278     |
-| gt          | 1.3.0      | 0.456     |
-| htmltools   | 0.5.9      | 0.404     |
-| htmlwidgets | 1.6.4      | 0.317     |
-| jsonlite    | 2.0.0      | 0.362     |
-| lifecycle   | 1.0.5      | 0.287     |
-| log4r       | 0.4.4.9000 | 0.434     |
-| magrittr    | 2.0.5      | 0.291     |
-| purrr       | 1.2.2      | 0.391     |
-| rlang       | 1.3.0      | 0.384     |
+| broom       | 1.0.13     | 0.365     |
+| cli         | 3.6.6      | 0.429     |
+| DBI         | 1.3.0      | 0.393     |
+| dbplyr      | 2.6.0      | 0.413     |
+| dplyr       | 1.2.1      | 0.422     |
+| ggplot2     | 4.0.3      | 0.421     |
+| glue        | 1.8.1      | 0.325     |
+| gt          | 1.3.0      | 0.473     |
+| htmltools   | 0.5.9      | 0.443     |
+| htmlwidgets | 1.6.4      | 0.354     |
+| jsonlite    | 2.0.0      | 0.397     |
+| lifecycle   | 1.0.5      | 0.329     |
+| log4r       | 0.4.4.9000 | 0.462     |
+| magrittr    | 2.0.5      | 0.330     |
+| purrr       | 1.2.2      | 0.405     |
+| rlang       | 1.3.0      | 0.435     |
 | stats       | 4.6.1      | 0.704     |
-| stringr     | 1.6.0      | 0.365     |
-| tibble      | 3.3.1      | 0.348     |
-| tidyr       | 1.3.2      | 0.357     |
+| stringr     | 1.6.0      | 0.395     |
+| tibble      | 3.3.1      | 0.393     |
+| tidyr       | 1.3.2      | 0.402     |
 | utils       | 4.6.1      | 0.687     |
-| yaml        | 2.3.12     | 0.273     |
+| yaml        | 2.3.12     | 0.311     |
 
 ## Pull Request History
+
+#### Pull Request 2051: Catch up Dev to Main
+
+Merging main into dev
+
+<https://github.com/Gilead-Public/gsm/pull/2051>
+
+|  Requester  |   Date Requested    | Reviewers | Review Status |
+|:-----------:|:-------------------:|:---------:|:-------------:|
+| nandriychuk | 2026-07-27 20:43:27 |           |   APPROVED    |
+
+#### Pull Request 2050: Release Candidate v2.2.5
+
+Merging release-2.2.5 into main
+
+<https://github.com/Gilead-Public/gsm/pull/2050>
+
+|  Requester  |   Date Requested    | Reviewers | Review Status |
+|:-----------:|:-------------------:|:---------:|:-------------:|
+| nandriychuk | 2026-07-24 18:32:10 |           |   APPROVED    |
 
 #### Pull Request 2049: Catch up Dev to Main
 
@@ -1292,13 +1312,3 @@ Merging fix-1761 into ingest
 | Requester |   Date Requested    |  Reviewers   | Review Status |
 |:---------:|:-------------------:|:------------:|:-------------:|
 | samussiah | 2024-09-13 16:53:31 | lauramaxwell |   APPROVED    |
-
-#### Pull Request 1843: MakeMetricTable()
-
-Merging fix-1835 into dev
-
-<https://github.com/Gilead-Public/gsm/pull/1843>
-
-| Requester  |   Date Requested    | Reviewers | Review Status |
-|:----------:|:-------------------:|:---------:|:-------------:|
-| jonthegeek | 2024-09-13 16:11:28 |           |   COMMENTED   |

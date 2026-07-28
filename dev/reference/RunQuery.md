@@ -54,6 +54,14 @@ query <- "SELECT * FROM df WHERE AGE > 30"
 
 result <- RunQuery(query, df)
 #> Creating a new temporary DuckDB connection.
+#> duckdb keeps downloaded extensions and secrets in a temporary directory:
+#> ℹ /tmp/RtmpDmeH5B/duckdb
+#> This is removed when the R session ends.
+#> • Extensions are re-downloaded each session.
+#> • Secrets are lost.
+#> ℹ Run duckdb(shared_home = TRUE) (or create ~/.duckdb) to keep them (suitable for most users).
+#> ℹ Run duckdb(shared_home = FALSE) to accept the temporary directory (and silence this message).
+#> ℹ See ?duckdb_storage for details and alternatives.
 #> ✔ SQL Query complete: 1 rows returned.
 #> Disconnected from temporary DuckDB connection.
 ```
